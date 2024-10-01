@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome/all.min.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!--  step--(1) -->
+    <div class="container">
+      <div class="nav-container">
+        <ul class="navbar">
+          <div class="step">
+            <li class="sign stepOne active" data-step="1">sign up</li>
+          </div>
+          <div class="step">
+            <li class="mssg stepTwo" data-step="2">message</li>
+          </div>
+          <div class="step">
+            <li class="confirm stepThree" data-step="3">confirm</li>
+          </div>
+        </ul>
+      </div>
+      <div class="container-form">
+        <!-- form1 -->
+        <form action="" method="" id="form1" class="step-form">
+          <div class="row mb-2">
+            <div class="col-5 ms-1 me-3">
+              <label for="f-name">fist name</label>
+            </div>
+            <div class="col-5 ms-4">
+              <label for="l-name">last name</label>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="FirstName"
+                id="f-name"
+                required
+              />
+            </div>
+            <div class="col-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="LastName"
+                id="l-name"
+                required
+              />
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-5 ms-1 me-3">
+              <label for="date">date of birth</label>
+            </div>
+            <div class="col-5 ms-4">
+              <label for="email">email adress</label>
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-6">
+              <input type="date" id="date" class="form-control" />
+            </div>
+            <div class="col-6">
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="example@mail.com"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-10 mb-2 ms-1">
+              <label for="address">Address</label>
+            </div>
+            <div class="col-12">
+              <input
+                type="text"
+                id="address"
+                class="form-control"
+                placeholder="Flat 4, 24 Castle Street, Perth, PH1 3JY"
+              />
+            </div>
+          </div>
+          <div class="button mt-5 d-flex justify-content-end">
+            <button class="btn btn-info" id="next1" data-action="next">
+              next
+            </button>
+          </div>
+        </form>
+        <!-- form2 -->
+        <form action="" method="" id="form2" class="step-form">
+          <div class="row">
+            <label for="message" class="mt-2">message</label>
+          </div>
+          <div class="row">
+            <textarea
+              name=""
+              id="message"
+              rows="7"
+              class="col-11 ms-3 mt-3"
+            ></textarea>
+          </div>
+
+          <div class="button mt-5 d-flex justify-content-between">
+            <button class="btn btn-outline-info" id="back1" data-action="back">
+              back
+            </button>
+            <button class="btn btn-info" id="next2" data-action="next">
+              next
+            </button>
+          </div>
+        </form>
+        <!-- form3 -->
+        <form action="" method="" id="form3" class="step-form">
+          <p class="mt-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+            vitae distinctio nisi praesentium a consequatur dolore magnam sunt
+            voluptates ratione?
+          </p>
+          <div class="btns mt-5">
+            <div class="btn btn-success">yes! I want it</div>
+            <div class="btn btn-danger">no! I don`t want it</div>
+          </div>
+
+          <div class="button mt-5 d-flex justify-content-between">
+            <button class="btn btn-outline-info" id="back2" data-action="back">
+              back
+            </button>
+
+            <button
+              type="submit"
+              class="btn btn-info"
+              id="submit"
+              data-action="submit"
+            >
+              submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="message" id="form-message"></div>
+    <script src="fontawesome/all.min.js"></script>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>

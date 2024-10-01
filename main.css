@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 700px;
+  background-color: #b9efe1;
+
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  display: grid;
+  place-items: center;
+  text-transform: capitalize;
+}
+.container {
+  background-color: #ffffff;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0px 0px 20px 2px #7f7e7e49;
+  border-radius: 3px;
+  position: relative;
+  overflow: hidden;
+}
+.container .container-form form {
+  width: 400px;
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  transition: 0.5s;
+}
+#form2 {
+  left: 550px;
+}
+#form3 {
+  left: 550px;
+}
+.navbar {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  /* justify-content: space-around; */
+  list-style-type: none;
+  /* background-color: #ffffff; */
+  justify-content: center;
+}
+.navbar li {
+  font-size: 25px;
+
+  padding: 0 30px;
+  position: relative;
+  cursor: pointer;
+}
+.step li {
+  position: relative;
+  padding-left: 40px;
+  display: inline-block;
+  font-size: 20px;
+  color: #333;
+}
+.navbar li::before {
+  content: attr(data-step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35px;
+  height: 35px;
+  /* border: 2px solid #f8e08a; */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: black;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.step li.active::before {
+  background-color: #ffd700;
+  border-color: #ffcc00;
+}
+
+.step li.active {
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  width: 150px;
+  position: relative;
+  text-transform: capitalize;
+}
+button.btn.btn-info {
+  font-size: 20px;
+  /* margin-right: 15px; */
+  margin-left: 10px;
+}
+.message {
+  width: 25%;
+  height: 70px;
+  font-weight: 500;
+  line-height: 70px;
+  text-align: center;
+  box-shadow: 2px 0 10px #889692be;
+  border-radius: 30px 30px 30px 0px;
+  display: none;
+}
+.message.success {
+  background-color: #44d46d;
+  /* border: 2px solid #c2bb8d; */
+  font-size: 22px;
+  color: #ffffff;
+}
+.message.error {
+  background-color: #df2c2c;
+  color: #ffffff;
+  font-size: 20px;
+}
